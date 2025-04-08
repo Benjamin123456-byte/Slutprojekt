@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 1</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Welcome To Tech Inc</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="item-details">
+            <h2 class="item-title">The Laptop</h2>
+            <img src="https://www.diamondcomputers.co.uk/193-large_default/services-and-repairs-laptop-broken-screen-replacements.jpg"     alt="Item 1" class="item-image">
+            <p class="item-description">Do you need more then 2 Chrome tabs open then you need this </p>
+            <p class="item-price">$999</p>
+            <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">&copy; 2025 Benjamin Uslu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            const item = {
+                id: 1,
+                name: "Item 1",
+                price: 100,
+                quantity: 1
+            };
+
+            
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            
+            const existingItem = cart.find(cartItem => cartItem.id === item.id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push(item);
+            }
+
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert("Item added to cart!");
+        }
+    </script>
+</body>
+</html>

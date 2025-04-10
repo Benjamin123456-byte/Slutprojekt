@@ -57,6 +57,7 @@
     width: 100%; 
     box-sizing: border-box;
     z-index: 1000;
+    margin-top: auto;
 }
 
 
@@ -122,7 +123,15 @@ body {
     display: block;
     margin: 10px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: center;
+    margin-right: center;
+    margin-top: center;
+    margin-bottom: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .item-description {
@@ -280,4 +289,193 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 8px;
+}
+.item-title {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+.item-subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+.item-details {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
+.item-details p {
+    margin: 10px 0;
+}
+.item-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+.main-contentcart {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-contentcart h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.cart-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-items li:last-child {
+    border-bottom: none;
+}
+
+.cart-items strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: right;
+    color: #333;
+}
+
+.cart-total p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.remove-button:active {
+    background-color: #bd2130;
+}
+
+.checkout-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto 0;
+    width: 200px;
+}
+
+.clear-cart-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto 0;
+    width: 200px;
+}
+
+.main-content3 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-content3 h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.main-content3 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.main-content  {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.main-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+.main-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+.main-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.main-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
 }
